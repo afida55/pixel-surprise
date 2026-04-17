@@ -1,1 +1,1 @@
-# A simple surprise webpage.
+A simple surprise webpage.
