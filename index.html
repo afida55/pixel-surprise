@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Surprise 💙 </title>  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="nameSection">
+  <h2 id="type">Wanna see a surprise?💙</h2>
+  <input type="text" id="nameInput" placeholder="Enter your name" aria-label="Enter your name">
+  <button onclick="showProposal()">Continue 💕</button>
+  <h2 id="nameHint"></h2>
+</div>
+
+<div class="container">
+
+  <h1 id="typewriter"></h1>
+
+  <p id="countdown"></p>
+
+  <div class="buttons" id="buttonSection">
+    <button id="yesBtn">Yes ❤️</button>
+    <button id="noBtn">No 🙈</button>
+  </div>
+
+  <div id="afterYes" class="hidden">
+    <h2>Aww… you said YES!💕</h2>
+    <h3>But wait…</h3>
+    <h4>Now type the tiny secret to see something special 💖</h4>
+
+    <input type="text" id="secretInput" placeholder="Open the Surprise"><br>
+    <button onclick="unlockSecret()">Unlock It 💌</button>
+
+    <p id="hintText"></p>
+
+    <p id="secretMessage" class="hidden">
+    </p>
+  </div>
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
